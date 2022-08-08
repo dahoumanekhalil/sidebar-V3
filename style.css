@@ -102,28 +102,28 @@ body{
     width: 50px;
 }
 
-.sitting {
+.setting {
     display: flex;
     flex-direction: column;
 }
 
-.sitting i {
+.setting i {
     font-size: 50px;
     width: 50px;
     border-radius: 50%;
     color: var(--second-color);
     z-index: 5;
     cursor: pointer;
-    animation: sitting linear 3s infinite;
+    animation: setting linear 3s infinite;
 }
 
-@keyframes sitting {
+@keyframes setting {
     100%{
         transform: rotate(360deg);
     }
 }
 
-.sitting div {
+.setting div {
     height: 200px;
     width: 50px;
     border-radius: 0 20px 0 0;

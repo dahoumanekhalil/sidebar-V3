@@ -2,7 +2,7 @@ let body = document.querySelector("body")
 body.style.cssText = `height: ${window.innerHeight};`;
 
 let color = document.querySelectorAll('[class="color colorTheme"]');
-let sitting = document.querySelector('.sitting i')
+let setting = document.querySelector('.setting i')
 let theme = document.querySelector('.theme')
 let themSpace = document.querySelector('.themeSpace');
 

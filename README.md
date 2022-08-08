@@ -1,1 +1,2 @@
-# sitting Bar theme lang V1
+# settings Bar theme lang V1
+# setting-Bar-theme-lang-V1
