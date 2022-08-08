@@ -1,2 +1,1 @@
-# weather app just for learning
-# weather-app-V1
+# sitting Bar theme lang V1

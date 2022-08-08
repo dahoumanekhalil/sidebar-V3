@@ -1,70 +1,276 @@
+:root {
+    --main-color: #2b2b2b;
+    --second-color: #ffcc35;
+    --text-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    /* height: 100%; */
-    background: rgb(159,38,205);
-    background: linear-gradient(180deg, rgba(159,38,205,1) 0%, rgba(30,106,179,1) 48%, rgba(0,212,255,1) 100%);
-    background-repeat: no-repeat;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.homePage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*//////////////// navigation bar ////////////////*/
+
+.navigationBar {
+    height: 80px;
+    width: 100%;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rmmLogo {
+    width: 150px;
+}
+
+.undredList {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: white;
-    font-size: 40px;
-    text-align: center;
 }
 
-.searchBox {
-    background-color: rgba(255,255,255,0.3);
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    border: none;
-    border-bottom: rgba(160, 68, 196, 0.8) solid 5px;
-    border-radius: 0 20px 0 20px;
-}
-
-.searchInput {
-    width: 95%;
-    border-radius: 0 20px 0 20px;
-    outline: none;
-    background-color: transparent;
-    border: none;
-    /* border-bottom: rgba(159,38,205,1) solid 2px; */
+.listElement {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
     color: white;
     font-size: 25px;
     font-weight: 700;
+    margin: auto 20px;
+    transition: color 0.15s ease-in-out;
+    text-shadow: 1px 1px 20px var(--main-color);
 }
 
-.searchInpt:-ms-input-placeholder{
-    color: rgb(255, 255, 255);
+.listElement:hover {
+    color: var(--main-color);
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.55);
 }
 
-.searchInput::placeholder{
-    color: rgb(255, 255, 255);
-    /* opacity: 1; */
-}
-
-.searchInpt::-ms-input-placeholder{
-    color: rgb(255, 255, 255);
-}
-
-.top, .middle, .bottom{
+.navBotton {
     display: flex;
-    width: 450px;
-    font-size: 30px;
-    /* background-color: red; */
-    justify-content: space-around;
-    line-height: 1;
+    justify-content: center;
     align-items: center;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.33); 
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.33);
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
 }
 
-
-
-.middle {
-    width: 200px;
-    /* background-color: aqua; */
+.navBotton:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    -webkit-box-shadow: inset 5px 5px 15px 3px rgba(0,0,0,0.2); 
+    box-shadow: inset 5px 5px 15px 3px rgba(0,0,0,0.2);
 }
 
-.bottom {
-    font-size: 55px;
+/*///////////////// theme box 2 /////////////////*/
+
+.theme {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 100px;
+    height: 170px;
+    width: 300px;
+    background-color: #ffcd3583;
+    border-radius: 20px 0 0 20px;
+    transition: 1s all ease-in-out;
+}
+
+.themeSpace {
+    height: 50px;
+    width: 50px;
+}
+
+.sitting {
+    display: flex;
+    flex-direction: column;
+}
+
+.sitting i {
+    font-size: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--second-color);
+    z-index: 5;
+    cursor: pointer;
+    animation: sitting linear 3s infinite;
+}
+
+@keyframes sitting {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.sitting div {
+    height: 200px;
+    width: 50px;
+    border-radius: 0 20px 0 0;
+}
+
+.parameters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffcd352b;
+}
+
+.params {
+    display: none;
+    background-color: red;
+}
+
+.settingSize {
+    font-size: 35px;
+}
+
+.hiddenElements {
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.parameters .lang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameters .lang a{
+    text-decoration: none;
+    font-size: 25px;
+    margin: auto 30px;
+    color: var(--text-color);
+}
+
+.parameters .websiteColors span i{
+    cursor: pointer;
+}
+
+/*/////////////// theme box end ////////////////*/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 10%;
+}
+
+.headerRight {
+    width: 50%;
+    color: var(--text-color);
+}
+
+.headerRight h1 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.headerRight h1 span {
+    color: var(--second-color);
+    text-shadow: 1px 1px 20px #ffcd3535;
+}
+
+.headerRight p {
+    font-size: 25px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.cwBottons {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.cwBottons .navBotton {
+    border: 2px solid var(--second-color);
+    color: var(--text-color);
+    line-height: 1;
+    padding: 0px auto;
+    margin-right: 20px;
+}
+
+.cwBottons .navBotton:hover {
+    color: var(--main-color);
+}
+
+.cwBottons i , .socialmediaBottons ul li i{
+    background-color: var(--main-color);
+    border: 2px solid var(--second-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background: cover;
+    transition: all 0.15s ease-in-out;
+}
+
+.cwBottons i:hover , .socialmediaBottons ul li i:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.socialmediaBottons ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socialmediaBottons ul li {
+    margin: auto 5px;
+}
+
+.socialmediaBottons ul li i {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: start;
+    float: right;
+}
+
+.headerLeftImg {
+    width: 500px;
+    float: left;
 }
