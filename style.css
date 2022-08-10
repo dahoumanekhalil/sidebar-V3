@@ -1,276 +1,98 @@
-:root {
-    --main-color: #2b2b2b;
-    --second-color: #ffcc35;
-    --text-color: white;
-}
-
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
 }
 
-body{
-    background-color: var(--main-color);
-    overflow: hidden;
-}
-
-.homePage {
+.sidebar {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #2b2b2b;
+    color: white;
 }
 
-/*//////////////// navigation bar ////////////////*/
-
-.navigationBar {
-    height: 80px;
-    width: 100%;
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.rmmLogo {
-    width: 150px;
-}
-
-.undredList {
+.sidebarTop {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
+    cursor: pointer;
 }
 
-.listElement {
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-    color: white;
+.sidebarTop img {
+    width: 120px;
+}
+
+.sidebarTop:hover {
+    background-color: #5a5a5a5b;
+}
+
+.sidebarTop p {
     font-size: 25px;
     font-weight: 700;
-    margin: auto 20px;
-    transition: color 0.15s ease-in-out;
-    text-shadow: 1px 1px 20px var(--main-color);
 }
 
-.listElement:hover {
-    color: var(--main-color);
-    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.55);
+.sidebarMiddle {
+    margin-top: 50px;
+
 }
 
-.navBotton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 10px 30px;
+.sidebarMiddle div{
+    margin: 10px ;
+    padding: 20px;
+    background-color: rgba(187, 187, 187, 0.317);
     border-radius: 10px;
-    -webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.33); 
-    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.33);
     cursor: pointer;
-    background-color: var(--main-color);
-    color: white;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
     font-weight: 700;
-    transition: all 0.15s ease-in-out;
 }
 
-.navBotton:hover {
-    background-color: var(--second-color);
-    color: var(--main-color);
-    -webkit-box-shadow: inset 5px 5px 15px 3px rgba(0,0,0,0.2); 
-    box-shadow: inset 5px 5px 15px 3px rgba(0,0,0,0.2);
+.sidebarMiddle div:hover{
+    background-color: #5a5a5a5b;
 }
 
-/*///////////////// theme box 2 /////////////////*/
+.sidebarMiddle div i{
+    font-size: 25px;
+    margin-right: 10px;
+}
 
-.theme {
+.sidebarBottom {
     position: absolute;
     display: flex;
-    right: 0;
-    top: 100px;
-    height: 170px;
-    width: 300px;
-    background-color: #ffcd3583;
-    border-radius: 20px 0 0 20px;
-    transition: 1s all ease-in-out;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    bottom: 00px;
+    cursor: pointer;
 }
 
-.themeSpace {
+.sidebarBottom:hover {
+    background-color: #5a5a5a5b;
+}
+
+.sidebarBottom img {
+    width: 50px;
     height: 50px;
-    width: 50px;
-}
-
-.setting {
-    display: flex;
-    flex-direction: column;
-}
-
-.setting i {
-    font-size: 50px;
-    width: 50px;
     border-radius: 50%;
-    color: var(--second-color);
-    z-index: 5;
-    cursor: pointer;
-    animation: setting linear 3s infinite;
+    padding-left: 10px;
+    object-fit: cover;
 }
 
-@keyframes setting {
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-.setting div {
-    height: 200px;
-    width: 50px;
-    border-radius: 0 20px 0 0;
-}
-
-.parameters {
+.sidebarBottom div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
-    height: 100%;
-    background-color: #ffcd352b;
+    justify-content: center;
+    margin-left: 10px;
 }
 
-.params {
-    display: none;
-    background-color: red;
-}
-
-.settingSize {
-    font-size: 35px;
-}
-
-.hiddenElements {
-    color: var(--text-color);
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.parameters .lang {
-    display: flex;
-    justify-content: space-between;
-}
-
-.parameters .lang a{
-    text-decoration: none;
-    font-size: 25px;
-    margin: auto 30px;
-    color: var(--text-color);
-}
-
-.parameters .websiteColors span i{
-    cursor: pointer;
-}
-
-/*/////////////// theme box end ////////////////*/
-
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 85%;
-    margin: 10%;
-}
-
-.headerRight {
-    width: 50%;
-    color: var(--text-color);
-}
-
-.headerRight h1 {
-    font-size: 45px;
-    margin-bottom: 35px;
-}
-
-.headerRight h1 span {
-    color: var(--second-color);
-    text-shadow: 1px 1px 20px #ffcd3535;
-}
-
-.headerRight p {
-    font-size: 25px;
-    text-align: justify;
-    font-weight: 500;
-}
-
-.cwBottons {
-    display: flex;
-    justify-content: right;
-    margin-top: 20px;
-}
-
-.cwBottons .navBotton {
-    border: 2px solid var(--second-color);
-    color: var(--text-color);
+.sidebarBottom div h1{
+    font-size: 20px;
     line-height: 1;
-    padding: 0px auto;
-    margin-right: 20px;
 }
 
-.cwBottons .navBotton:hover {
-    color: var(--main-color);
-}
-
-.cwBottons i , .socialmediaBottons ul li i{
-    background-color: var(--main-color);
-    border: 2px solid var(--second-color);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-radius: 50%;
-    background: cover;
-    transition: all 0.15s ease-in-out;
-}
-
-.cwBottons i:hover , .socialmediaBottons ul li i:hover {
-    background-color: var(--second-color);
-    color: var(--main-color);
-}
-
-.socialmediaBottons ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.socialmediaBottons ul li {
-    margin: auto 5px;
-}
-
-.socialmediaBottons ul li i {
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.headerLeft {
-    display: flex;
-    justify-content: start;
-    float: right;
-}
-
-.headerLeftImg {
-    width: 500px;
-    float: left;
+.sidebarBottom div h2 {
+    font-size: 17px;
 }

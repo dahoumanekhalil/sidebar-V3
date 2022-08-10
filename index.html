@@ -4,69 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>collor switcher</title>
+    <!-- linking css  -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Sidebar V1</title>
 </head>
 <body>
-    <div class="sideBar">
-
-    </div>
-    <div class="homePage">
-        <div class="navigationBar">
-            <img class="rmmLogo" src="./assets/RMM.png" alt="">
-            <ul class="undredList">
-                <li class="listElement">Home</li>
-                <li class="listElement">Our Services</li>
-                <li class="listElement">CEO's speech</li>
-                <li class="listElement">English</li>
-                <li class="listElement">العربية</li>
-            </ul>
-            <button class="navBotton">Contact us</button>
+    <div class="sidebar">
+        <div class="sidebarTop">
+            <img src="./assets/rmm.png" alt="">
         </div>
-
-        <div class="theme themeSpace">
-            <div class="setting">
-                <i class="fa-solid fa-gear"></i>
-                <div></div>
-            </div>
-            <div class="params">
-                <div class="parameters headenElements">
-                    <p class="settingSize">settings</p>
-                    <div class="lang">
-                        <a href="#">english</a>
-                        <a href="#">العربية</a>
-                    </div>
-                    <div class="websiteColors settingSize">
-                        <span class="color colorTheme" data-maincolor="#2b2b2b" data-secondcolor="#ffcd35" style="color:#2b2b2b ;"><i class="fa-solid fa-circle"></i></span>
-                        <span class="color colorTheme" data-maincolor="#ffcd35" data-secondcolor="#2b2b2b" style="color:#ffcd35 ;"><i class="fa-solid fa-circle"></i></span>
-                        <span class="color colorTheme" data-maincolor="#1bc8d1" data-secondcolor="#2b2b2b" style="color:#1bc8d1 ;"><i class="fa-solid fa-circle"></i></span>
-                    </div>
-                </div>
-            </div>
+        <div class="sidebarMiddle">
+            <div><i class="fa-solid fa-magnifying-glass"></i><span>search</span></div>
+            <div><i class="fa-solid fa-gear"></i><span>deashboerd</span></div>
+            <div><i class="fa-solid fa-user-group"></i><span>friends</span></div>
+            <div><i class="fa-solid fa-paper-plane"></i><span>chat</span></div>
+            <div><i class="fa-solid fa-share-nodes"></i><span>share</span></div>
+            <div><i class="fa-solid fa-bell"></i><span>notification</span></div>
+            <div><i class="fa-solid fa-bookmark"></i><span>saved</span></div>
+            <div><i class="fa-solid fa-briefcase"></i><span>new works</span></div>
         </div>
-
-        <div class="header">
-            <div class="headerRight">
-                <h1>Lorem,  <span> ipsum.</span> dolor <span>consectetur!</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam ea sunt commodi repellat. Nostrum vero iusto sunt ipsum necessitatibus neque soluta autem eveniet molestiae magni officiis corporis quod laboriosam beatae aspernatur laudantium magnam, porro illo eos. Nam tempora odio maiores blanditiis reiciendis obcaecati sint excepturi dolorem accusantium. Ipsum, sunt. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis possimus, voluptas nisi placeat aliquam quas est omnis molestiae magni.</p>
-                <div class="cwBottons">
-                    <button class="navBotton">Contact us</button>
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                <div class="socialmediaBottons">
-                    <ul>
-                        <li class="socialMediaIcon"><i class="fa-brands fa-facebook"></i></li>
-                        <li class="socialMediaIcon"><i class="fa-brands fa-twitter"></i></li>
-                        <li class="socialMediaIcon"><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li class="socialMediaIcon"><i class="fa-brands fa-youtube"></i></li>
-                    </ul>
-                </div>
+        <div class="sidebarBottom">
+            <img src="./assets/interstellar.jpg" alt="">
+            <div>
+                <h1>dahoumane khalil</h1>
+                <h2>frontend dev</h2>
             </div>
-            <div class="headerLeft"><img src="./assets/homeimg.png" class="headerLeftImg" alt=""></div>
         </div>
     </div>
 
+    <!-- javascript file connecting -->
     <script src="./main.js"></script>
 </body>
 </html>
