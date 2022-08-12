@@ -1,0 +1,62 @@
+.light{
+    background-color: rgb(240, 248, 255);
+}
+
+.light .sidebar {
+    background-color: #c2c2c2;
+    color: rgb(61, 61, 61);
+}
+
+.light .sidebarTop {
+    border-bottom: 2px solid #f0f8ff;
+}
+
+.light .sidebarTop:hover {
+    background-color: #5a5a5a5b;
+}
+
+.light .sidebarMiddle div{
+    background-color: rgba(192, 192, 192, 0.861);
+}
+
+.light .sidebarMiddle div:hover{
+    background-color: #d6d6d65b;
+}
+
+.light .sidebarMiddle div input {
+    background-color: rgba(224, 224, 224, 0.692);
+    color: rgb(61, 61, 61);
+}
+
+.light .sidebarMiddle div input::placeholder{
+    color: rgb(61, 61, 61);
+}
+
+.light .sidebarBottom {
+    border-top: 2px solid #f0f8ff;
+}
+
+.light .sidebarBottom:hover {
+    background-color: #d6d6d65b;;
+}
+
+.light .pageMode {
+    background-color: #e1e1e1;
+}
+
+.light .pageMode i {
+    color: #f0f8ff;
+}
+
+.light .pageMode i:nth-child(2){
+    color: #2b2b2b;
+}
+
+.light .pageMode div {
+    background-color: #2b2b2b;
+    transform: translateX(0);
+}
+
+.lightcontant {
+    color: #2b2b2b;
+}

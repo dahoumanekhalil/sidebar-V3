@@ -1,0 +1,64 @@
+
+.dark{
+    background-color: #5a5a5a;
+}
+
+.dark .sidebar {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.dark .sidebarTop {
+    border-bottom: 2px solid #5a5a5a5b;
+}
+
+.dark .sidebarTop:hover {
+    background-color: #5a5a5a5b;
+}
+
+.dark .sidebarMiddle div{
+    background-color: rgba(187, 187, 187, 0.317);
+}
+
+.dark .sidebarMiddle div:hover{
+    background-color: #5a5a5a5b;
+}
+
+.dark .sidebarMiddle div input {
+    background-color: #5a5a5a5b;
+    color: white;
+}
+
+.dark .sidebarMiddle div input::placeholder{
+    color: rgba(255, 255, 255, 0.655);  
+}
+
+.dark .sidebarBottom {
+    border-top: 2px solid #5a5a5a5b;
+}
+
+.dark .sidebarBottom:hover {
+    background-color: #5a5a5a5b;
+}
+
+.dark .pageMode {
+    background-color: #4e4f50;
+}
+
+.dark .pageMode i {
+    color: #2b2b2b;
+}
+
+.dark .pageMode i:nth-child(1){
+    color: #e1e1e1;
+}
+
+.dark .pageMode div {
+    transform: translateX(35px);
+    background-color: #e1e1e1;
+}
+
+.darkcontant {
+    color: white;
+}
+
