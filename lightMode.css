@@ -24,20 +24,12 @@
 }
 
 .light .sidebarMiddle div input {
-    background-color: rgba(224, 224, 224, 0.692);
+    background-color: transparent;
     color: rgb(61, 61, 61);
 }
 
 .light .sidebarMiddle div input::placeholder{
     color: rgb(61, 61, 61);
-}
-
-.light .sidebarBottom {
-    border-top: 2px solid #f0f8ff;
-}
-
-.light .sidebarBottom:hover {
-    background-color: #d6d6d65b;;
 }
 
 .light .pageMode {
@@ -59,4 +51,12 @@
 
 .lightcontant {
     color: #2b2b2b;
+}
+
+.light .sidebarBottom {
+    border-top: 2px solid #f0f8ff;
+}
+
+.light .sidebarBottom:hover {
+    background-color: #d6d6d65b;;
 }
