@@ -2,26 +2,29 @@
     margin: 0; padding: 0;
 }
 
+body{
+    font-family: 'Titillium Web', sans-serif;
+    transition: all 0.5s;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
     position: fixed;
     width: 85px;
     height: 100%;
-    background-color: #2b2b2b;
-    color: white;
     transition: all 0.5s ease-in-out;
+    z-index: 10;
 }
 
 .sidebarTop {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     height: 60px;
-    border-bottom: 2px solid #5a5a5a5b;
     border-radius: 10px;
     padding: 0 20px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .sidebarTop div {
@@ -30,15 +33,12 @@
     align-items: flex-start;
     width: 42px;
     overflow: hidden;
+    transition: 0.2s ease 0.1s;
 }
 
 .sidebarTop div img {
     object-fit: cover;
     width: 120px;
-}
-
-.sidebarTop:hover {
-    background-color: #5a5a5a5b;
 }
 
 .sidebarTop p {
@@ -54,7 +54,6 @@
     margin: 10px ;
     padding: 20px;
     height: 25px;
-    background-color: rgba(187, 187, 187, 0.317);
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -63,28 +62,20 @@
     font-weight: 700;
 }
 
-.sidebarMiddle div:hover{
-    background-color: #5a5a5a5b;
-}
-
 .sidebarMiddle div span {
-    display: none;
     overflow: hidden;
     line-height: 1;
 }
 
 .sidebarMiddle div input {
-    background-color: #5a5a5a5b;
     outline: none;
     width: 160px;
     height: 30px;
     border: none;
-    color: white;
     font-size: 18px;
 }
 
 .sidebarMiddle div input::placeholder{
-    color: rgba(255, 255, 255, 0.655);
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -96,6 +87,50 @@
     margin-right: 10px;
 }
 
+#toggleMode {
+    display: none;
+}
+
+.pageMode {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto 80px 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pageMode i {
+    font-size: 18px;
+    margin: auto 8px;
+    z-index: 6;
+}
+
+.pageMode div {
+    position: absolute;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 3px 4px;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.darkcontant, .lightcontant {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    transition: 0.5s;
+}
+
 .sidebarBottom {
     position: absolute;
     display: flex;
@@ -104,12 +139,8 @@
     height: 60px;
     bottom: 00px;
     cursor: pointer;
-    border-top: 2px solid #5a5a5a5b;
     border-radius: 10px;
-}
-
-.sidebarBottom:hover {
-    background-color: #5a5a5a5b;
+    transition: 0.5s;
 }
 
 .sidebarBottom img {
@@ -121,18 +152,23 @@
 }
 
 .sidebarBottom div {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 0;  
+    left: 75px;  
     margin-left: 10px;
+    line-height: 1;
+    transition: 0.5s ease-out 0.09s;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .sidebarBottom div h1{
     font-size: 20px;
-    overflow: inherit;
 }
 
 .sidebarBottom div h2 {
     font-size: 17px;
 }
+

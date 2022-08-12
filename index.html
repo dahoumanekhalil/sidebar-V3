@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- linking css  -->
     <link rel="stylesheet" href="./style.css">
+    <!-- dark mod css -->
+    <link rel="stylesheet" href="./darkMode.css">
+    <!-- light Mode css -->
+    <link rel="stylesheet" href="./lightMode.css">
     <!-- title -->
-    <title>Sidebar V1</title>
+    <!-- Titillium font from google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- title -->
+    <title>Sidebar V3</title>
 </head>
-<body>
-    <div class="sidebar">
+<body class="dark">
+    <div class="sidebar" >
         <div class="sidebarTop">
             <div><img src="./assets/rmm.png" alt=""></div>
             
@@ -27,6 +36,12 @@
             <div><i class="fa-solid fa-bookmark"></i><span>saved</span></div>
             <div><i class="fa-solid fa-briefcase"></i><span>works</span></div>
         </div>
+        <input id="toggleMode" type="checkbox">
+        <label class="pageMode" for="toggleMode">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+            <div></div>
+        </label>
         <div class="sidebarBottom">
             <img src="./assets/interstellar.jpg" alt="">
             <div>
@@ -35,7 +50,8 @@
             </div>
         </div>
     </div>
-    <!-- javascript file connecting -->
+    <div class="darkcontant">dark mode</div>
+    <div class="lightcontant">light mode</div>
     <script src="./main.js"></script>
 </body>
 </html>
